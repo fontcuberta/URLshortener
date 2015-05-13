@@ -1,0 +1,9 @@
+	<h1> Link Shortener</h1>
+
+	<%= form_for [@link] do |f| %>
+		<%= f.label :url %>
+		<%= f.text_field :url %>
+	<% end %>
+<p><%= link_to "Last visited", last_visited_path %></p>
+<p><%= link_to "Most visited", most_visited_path %></p>
+	<p>Ironhack powered. - 2015</p>
